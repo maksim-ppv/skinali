@@ -1,0 +1,94 @@
+.navbar
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background-color: #fff
+    z-index: 2
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background-color: #ffffff
+        min-height: 80px
+    &__logo
+        margin-right: 200px
+    &__mobile
+        text-align: right
+    &__phone
+        display: block
+        text-decoration: none
+        margin-bottom: 5px
+        font-size: 19px
+        color: $text-color
+        +bold
+    &__text    
+        font-size: 14px
+        color: $text-color-secondary
+    &__mail
+        text-decoration: none
+        color: $text-color-secondary
+.menu
+    position: fixed
+    top: 80px 
+    left: 0
+    width: 100%
+    background-color: $text-color-blue
+    z-index: 0
+    transform: translateY(-100%)
+    &_active
+        transition: 0.2s
+        transform: translateY(0%)
+    &__nav
+        display: flex
+        align-items: center
+        justify-content: space-between
+    
+    &__link
+        display: inline-block
+        text-transform: uppercase
+        text-decoration: none
+        color: #fff
+        font-size: 17px
+        border: 1px solid #ffffff
+        border-radius: 10px
+        margin: 5px
+        padding: 14px 10px
+    &-button
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 80px
+        width: 70px
+        border: none
+        background-color: transparent
+        border-right: 1px solid #ede6f8
+        border-left: 1px solid #ede6f8
+        &__line
+            height: 3px
+            width: 20px
+            margin: 2px
+            border-radius: 2px
+            background-color: $text-color-blue
+.logo
+    &__title
+        display: block
+        font-size: 19px
+        text-transform: uppercase
+        +bold
+        margin-bottom: 5px 
+    &__description
+        display: block
+        font-size: 14px
+        color: $text-color-secondary
+
+    
+
+        
+
+
+
+
+
+
