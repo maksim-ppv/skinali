@@ -8,6 +8,25 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-width: 100%;
+    padding: 0 20px;
+  }
+}
+
 @font-face {
   font-family: 'Proxima Nova Semibold';
   src: url("../fonts/ProximaNova-Semibold.eot");
@@ -47,6 +66,12 @@ body {
   color: #fff;
   border: none;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+@media (max-width: 576px) {
+  .btn-o {
+    display: none;
+  }
 }
 
 .navbar {
@@ -105,7 +130,7 @@ body {
   left: 0;
   width: 100%;
   background-color: #5986e3;
-  z-index: 0;
+  z-index: 1;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
@@ -113,8 +138,8 @@ body {
 .menu_active {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(-101%);
+          transform: translateY(-101%);
 }
 
 .menu__nav {
@@ -185,6 +210,62 @@ body {
   color: #6b6b6b;
 }
 
+@media (max-width: 1199px) {
+  .navbar__logo {
+    margin-right: 0;
+  }
+  .menu__link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar__mobile {
+    display: none;
+  }
+  .menu__link {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    width: 280px;
+  }
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu__link {
+    min-width: 220px;
+    text-align: center;
+    font-size: 13px;
+    margin: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    margin: auto;
+  }
+}
+
+@media (max-width: 376px) {
+  .menu {
+    width: 100%;
+  }
+  .logo__title {
+    font-size: 16px;
+  }
+  .logo__description {
+    font-size: 12px;
+  }
+}
+
 .hero {
   background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat -150px;
   background-size: cover;
@@ -203,5 +284,11 @@ body {
   margin-bottom: 70px;
   font-size: 30px;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+@media (max-width: 1199px) {
+  .hero {
+    background-position: top left 30%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
