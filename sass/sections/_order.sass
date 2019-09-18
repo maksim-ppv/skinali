@@ -1,0 +1,49 @@
+.order
+    padding: 130px 0
+    &-block
+        background: #ffffff url(../img/order/form-bg.png) no-repeat right
+        padding: 50px
+    &__block
+        margin-top: -180px
+    &__title
+        font-size: 25px
+        text-transform: uppercase
+        +bold
+        margin-bottom: 20px
+    &__description
+        display: block
+        font-size: 21px
+        margin-bottom: 45px
+.form
+    &__row
+        display: flex
+        align-items: center
+        min-width: 900px
+        margin-bottom: 25px
+    &__input
+        width: 100% 
+    &__order
+        display: block
+        font-size: 17px
+        margin-bottom: 10px
+.checkbox
+    display: none
+    &:checked + label:before
+        background-color: $text-color-blue
+    &-label
+        display: flex
+        align-items: center
+        margin-right: 40px
+        &:hover
+            cursor: pointer
+        &:before
+            content: ''
+            border: 1px solid #dddddd
+            width: 30px
+            height: 30px
+            margin-right: 20px
+.input
+    height: 80px
+    width: 300px
+    padding: 30px
+    border: 1px solid #dddddd        

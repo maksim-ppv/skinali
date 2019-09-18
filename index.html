@@ -61,14 +61,55 @@
         <!-- /.hero -->
     </header>
     <!-- /.header -->
-    <div class="order">
-        <h2 class="order-title"></h2>
-        <div class="order-description"></div>
-        <form action="" class="form">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-        </form>
-    </div>
+    <section class="order bg-color">
+        <div class="container">
+            <div class="order__block order-block">
+                <h2 class="order__title">Оставьте заявку на расчет</h2>
+                <!-- /.order__title -->
+                <span class="order__description">и получите скидку 30% на изготовление скинали или фартука для кухни</span>
+                <!-- /.order__description -->
+                <form action="" class="form order__form">
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="" class="form__order">Вид стекла</label>
+                            <input type="text" class="input form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="" class="form__order">Ширина,см</label>
+                            <input type="text" class="input form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="" class="form__order">Высота,см</label>
+                            <input type="text" class="input form__input">
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__checkbox">
+                            <input class="checkbox" type="checkbox" id="install">
+                            <label class="checkbox-label" for="install">Монтаж</label>
+                        </div>
+                        <div class="form__checkbox">
+                            <input class="checkbox" type="checkbox" id="delivery">
+                            <label class="checkbox-label" for="delivery">Доставка</label>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                            <div class="form__group">
+                                <input type="text" class="input form__input" placeholder="Ваше имя">
+                            </div>
+                            <div class="form__group">
+                                <input type="text" class="input form__input" placeholder="Ваш телефон">
+                            </div>
+                            <div class="form__group">
+                                <input type="submit" class="btn btn-order" value="Получить скидку">
+                            </div>
+                        </div>
+                </form>
+            </div>
+            <!-- /.order__block -->
+        </div>
+        <!-- /.contain -->
+    </section>
+    <!-- /.order -->
 </body>
 </html>

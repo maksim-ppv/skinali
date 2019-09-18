@@ -35,9 +35,11 @@
     width: 100%
     background-color: $text-color-blue
     z-index: 1
-    transform: translateY(-100%)
+    opacity: 0
+    transform: translateY(-200%)
     &_active
         transition: 0.2s
+        opacity: 1
         transform: translateY(-101%)
     &__nav
         display: flex
