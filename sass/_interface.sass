@@ -1,6 +1,12 @@
 body
     +light
     color: $text-color
+button:active, button:focus
+    outline: none !important
+
+button::-moz-focus-inner
+    border: 0 !important
+
 .btn-o
     border: none
     background-color: transparent
@@ -18,11 +24,30 @@ body
     border: none
     +bold
     &-order
-        height: 80px
+        height: 70px
         width: 300px
 .bg-color
     background: $bg-color
+@media (max-width: 1199px)
+    .btn
+        &-order
+            height: 60px
+            width: 250px
+@media (max-width: 991px)
+    .btn
+        font-size: 15px
+        padding: 20px 25px
+        &-order
+            height: 60px
+            width: 200px
 @media (max-width: 576px)
     .btn-o     
         display: none
+@media (max-width: 376px)
+    .btn
+        font-size: 14px
+        padding: 20px 20px
+        &-order
+            padding: 20px 0px
+            width: 100%
 
