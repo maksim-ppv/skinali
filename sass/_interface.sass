@@ -6,7 +6,10 @@ button:active, button:focus
 
 button::-moz-focus-inner
     border: 0 !important
-
+section
+    padding-top: 100px
+button
+    cursor: pointer
 .btn-o
     border: none
     background-color: transparent
@@ -26,8 +29,29 @@ button::-moz-focus-inner
     &-order
         height: 70px
         width: 300px
+.button
+
+    &__catalog
+        background-color: $text-color-blue
+        height: 30px
+        border: none
+        padding: 10px
+        font-size: 11px
+        text-transform: uppercase
+        color: #ffffff
+    &_fitting
+        min-width: 140px
+        background-color: #ffffff
+        color: #6a99e9
+    &_add
+        background-color: #6a99e9
+    &_like
+        background-color: #417cde
+        
+
 .bg-color
     background: $bg-color
+
 @media (max-width: 1199px)
     .btn
         &-order
@@ -41,6 +65,8 @@ button::-moz-focus-inner
             height: 60px
             width: 200px
 @media (max-width: 576px)
+    section
+        padding-top: 80px
     .btn-o     
         display: none
 @media (max-width: 376px)
