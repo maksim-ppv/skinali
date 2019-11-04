@@ -1,9 +1,41 @@
+
 .price
-    &__block
-        display: flex
-        flex-wrap: wrap
-.price-item
-    &__text
+        padding-bottom: 100px 
+.price__block
         display: flex
         justify-content: space-between
-        align-items: center   
+        flex-wrap: wrap
+.price-wrap
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        position: relative
+.price-wrap
+        flex: 0 1       24%
+        height: 250px
+        overflow: hidden
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.05)
+        text-align: center
+        margin-bottom: 10px
+.price-item
+        position: absolute
+        transition: 0.3s
+        height: 250px
+        z-index: -1
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.05)
+.price-wrap:hover
+        cursor: pointer
+        overflow: visible
+        .price-item
+                background-color: #fff
+                z-index: 2
+                height: 325px
+.price-item__text
+        display: flex
+        justify-content: space-between
+        align-items: center 
+        margin: 22px 20px
+.sqrt
+        +bold 
+.price__btn 
+
