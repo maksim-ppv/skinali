@@ -16,9 +16,10 @@
         overflow: hidden
         box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.05)
         text-align: center
-        margin-bottom: 10px
+        margin-bottom: 20px
 .price-item
         position: absolute
+        width: 100%
         transition: 0.3s
         height: 250px
         z-index: -1
@@ -35,7 +36,41 @@
         justify-content: space-between
         align-items: center 
         margin: 22px 20px
+.price-item__img
+        width: 100%
+
 .sqrt
         +bold 
-.price__btn 
+.price__btn
+        padding: 15px 45px
+
+@media (max-width: 1199px)
+        .price-wrap
+                margin-bottom: 30px
+                flex: 0 1 31%                
+        .price__block        
+                justify-content: space-around
+@media (max-width: 991px)
+        .price-wrap
+                margin-bottom: 35px
+                flex: 0 1 42%
+@media (max-width: 768px)
+        .price
+                padding-bottom: 30px
+        .price-wrap
+                margin-bottom: 30px
+                flex: 0 1 45%
+        .price-item__text
+                margin: 22px 10px
+        .price__block        
+                justify-content: space-around
+        .sqrt
+                font-size: 12px
+
+@media (max-width: 576px)
+        .price-wrap
+                margin-bottom: 30px
+                flex: 0 1 90%
+        .price-item__text
+                justify-content: space-around
 

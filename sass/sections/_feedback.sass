@@ -8,15 +8,16 @@
     display: flex
     justify-content: space-between 
 .feedback-block__column 
-    flex: 0 1 33.3%
+    flex: 0 1 32%
     text-align: center
+    margin-bottom: 25px
 .feedback-block__text
     font-size: 15px
     position: relative
     font-style: italic
     background-color: #fff
     max-width: 370px
-    height: 135px
+    height: 155px
     line-height: 20px
     padding: 20px
     border-radius: 10px
@@ -32,5 +33,28 @@
     border: 20px solid transparent
     border-top: 10px solid #ffffff
 .feedback-block__img
-    margin: 35px 0
+    margin: 35px 0   
+
+@media (max-width: 991px)
+    .feedback-block__text
+        height: 195px
+        font-size: 14px
+@media (max-width: 768px)
+    .feedback-block__text
+        height: 185px
+        font-size: 14px
+        padding: 10px
+    .feedback-block 
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+    .feedback-block__column 
+        flex: 0 1 40%
+@media (max-width: 576px)
+    .feedback-block__column 
+        flex: 0 1 80%
+    .feedback-block__text
+        height: 160px
+        font-size: 14px
+        padding: 10px
     
