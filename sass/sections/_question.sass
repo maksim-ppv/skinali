@@ -5,7 +5,6 @@
     justify-content: center
     flex-wrap: wrap
     margin-bottom: 58px 
-.question-block__column 
 .question-block__title 
     font-size: 30px
     margin-right: 50px
@@ -13,6 +12,22 @@
     color: #5a8de2
     text-decoration-color: #b5c8ef
     font-size: 24px 
-// @media (max-width: 768px)
+@media (max-width: 768px)
+    .question-block
+        a
+            text-align: center
+        &__title
+            margin: 15px auto
 
-// @media (max-width: 576px)
+@media (max-width: 576px)
+    .question-block__title 
+        font-size: 20px
+    .question-block__link
+        font-size: 16px
+    .question-block
+        a
+            text-align: center
+        &__title
+            margin: 15px auto
+
+

@@ -43,10 +43,40 @@ footer
     height: 25px
     width: 25px
 
-// @media (max-width: 768px)
+@media (max-width: 768px)
+    .footer-info a
+        font-size: 14px
+    .footer__title
+        font-size: 16px
+    .footer__description
+        font-size: 12px
+        margin-bottom: 19px 
+    .footer__small-description
+        font-size: 12px
+        margin-bottom: 20px
 
-// @media (max-width: 576px)
 
+@media (max-width: 576px)
+    .footer-block
+        flex-wrap: wrap
+        padding-top: 10px
+        &__title
+            order: 2
+            text-align: center
+        &__title,&__pay,&__info
+            flex: 0 1 100%
+        &__pay
+            display: none
+    .footer-info
+        order: 1
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: space-around
+        align-items: flex-start
+    .footer-info a
+        display: block
+        margin: 10px
     
 
  
