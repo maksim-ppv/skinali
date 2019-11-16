@@ -5,17 +5,36 @@
     display: flex
     justify-content: space-between 
 .work-stage__column
-    flex: 0 1 14.1% 
+    flex: 0 1 14.1%
+    position: relative 
     text-align: center
     margin: 10px 0
+.work-stage__column:after
+    content: ''
+    position: absolute
+    top: 63px
+    left: 100px
+    width: 100%
+    height: 2px
+    background-color: #7e7b78
+.work-stage__column:last-child:after
+    display: none
+
 @media (max-width: 1199px)
+    .work-stage__column:after
+        left: 85px
     p
         font-size: 16px
 
 @media (max-width: 991px)
+    .work-stage__column:after
+        left: 75px
+        width: 80%
     p
         font-size: 14px
 @media (max-width: 768px)
+    .work-stage__column:after
+        display: none
     .section-stages
         padding-bottom: 50px
     .work-stage

@@ -7,6 +7,7 @@
     <title>Фабрика скинали</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/twentytwenty.css">
 </head>
 <body>
     <header class="header">
@@ -72,7 +73,15 @@
                     <div class="form__row">
                         <div class="form__group">
                             <label for="" class="form__order">Вид стекла</label>
-                            <input type="text" class="input form__input">
+                            <input type="hidden" name="type" id="select-type" value="С печатью" class="input form__input">
+                            <div class="select form_select">
+                                    <div class="select_checked">С печатью</div>
+                                    <div class="select__check"><img src="./img/order/down-arrow.png" alt=""></div>
+                                    <ul class="select_dropdown">
+                                        <li class="select_option" data-value="С печатью">С печатью</li>
+                                        <li class="select_option" data-value="Без печати">Без печати</li>
+                                    </ul>
+                                </div>
                         </div>
                         <div class="form__group">
                             <label for="" class="form__order">Ширина,см</label>
@@ -364,32 +373,32 @@
                 <!-- /.title stage__title -->
                 <div class="work-stage">
                     <div class="work-stage__column">
-                        <img src="../img/steps/step-1.png" alt="">
+                        <img src="./img/steps/step-1.png" alt="">
                         <h3 class="work-stage__title">Заявка</h3>
                         <p>Вы оставляете заявку на нашем сайте или по телефону</p>
                     </div>
                     <div class="work-stage__column">
-                        <img src="../img/steps/step-2.png" alt="">
+                        <img src="./img/steps/step-2.png" alt="">
                         <h3 class="work-stage__title">Замер</h3>
                         <p>Вы произвилите замер сами или наш специалист выезжает к вам</p>
                     </div>
                     <div class="work-stage__column">
-                        <img src="../img/steps/step-3.png" alt="">
+                        <img src="./img/steps/step-3.png" alt="">
                         <h3 class="work-stage__title">Договор</h3>
                         <p>Вы оставляете заявку на нашем сайте или по телефону</p>
                     </div>
                     <div class="work-stage__column">
-                        <img src="../img/steps/step-4.png" alt="">
+                        <img src="./img/steps/step-4.png" alt="">
                         <h3 class="work-stage__title">Дизайн</h3>
                         <p>Вы оставляете заявку на нашем сайте или по телефону</p>
                     </div>
                     <div class="work-stage__column">
-                        <img src="../img/steps/step-5.png" alt="">
+                        <img src="./img/steps/step-5.png" alt="">
                         <h3 class="work-stage__title">Производство</h3>
                         <p>Вы оставляете заявку на нашем сайте или по телефону</p>
                     </div>
                     <div class="work-stage__column">
-                        <img src="../img/steps/step-6.png" alt="">
+                        <img src="./img/steps/step-6.png" alt="">
                         <h3 class="work-stage__title">Монтаж</h3>
                         <p>Вы оставляете заявку на нашем сайте или по телефону</p>
                     </div>
@@ -402,13 +411,38 @@
     <!-- /.section section-stages -->
     <section class="section section-before">
         <div class="container">
-            <div class="before">
-                <h2 class="section__title title-before">До и после</h2>
-                <!-- /.section__title title-before -->
-                <div class="before-block"></div>
-                <!-- /.before-block -->
+            <h2 class="section__title title-before">До и после</h2>
+            <!-- /.section__title title-before -->
+            <div class="before-slider__wrap">
+                <div class="before-slider">
+                    <div class="before-slider__item">
+                        <div class="before-after">
+                            <img src="./img/before/before.jpg" alt="">
+                            <img src="./img/before/after.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="before-slider__item">
+                        <div class="before-after">
+                            <img src="./img/before/sample-before.png" alt="">
+                            <img src="./img/before/sample-after.png" alt="">
+                        </div>
+                    </div>
+                    <div class="before-slider__item">
+                        <div class="before-after">
+                            <img src="./img/before/before.jpg" alt="">
+                            <img src="./img/before/after.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="before-slider__arrows arrows">
+                    <button type="button" class="arrow arrow__left">
+                        <img src="./img/before/left-arow.png" alt="">
+                    </button>
+                    <button type="button" class="arrow arrow__right">
+                        <img src="./img/before/right-arow.png" alt="">
+                    </button>
+                </div>
             </div>
-            <!-- /.before -->
         </div>
         <!-- /.container -->
     </section>
@@ -421,17 +455,17 @@
                 <div class="feedback-block__column">
                     <div class="feedback-block__text">Девушка подобрала лучший вариант для меня, без первого взноса и с минимальной переплатой.</br> 
                         У Банка очень много способов погашения,и удобное мобильное приложение.</div>
-                    <div class="feedback-block__img"><img src="/img/reviews/rewiews-1.png " alt=""></div>
+                    <div class="feedback-block__img"><img src="./img/reviews/rewiews-1.png " alt=""></div>
                     <span class="feedback-block__name">Екатерина Иванова </br> Москва</span>
                 </div>
                 <div class="feedback-block__column">
                     <div class="feedback-block__text">Очень часто мы сталкиваемся с недопониманием со стороны сотрудников банка, и иной раз идти не хочется...В очередной раз "навешают лапши на уши" и культурно пошлют...</div>
-                    <div class="feedback-block__img"><img src="/img/reviews/rewiews-2.png " alt=""></div>
+                    <div class="feedback-block__img"><img src="./img/reviews/rewiews-2.png " alt=""></div>
                     <span class="feedback-block__name">Ирина Коломец</br> Киев</span>
                 </div>
                 <div class="feedback-block__column">
                     <div class="feedback-block__text">Хочу рассказать об опыте знакомства с Почта банком. Мне срочно были нужны деньги, а времени на сбор документов для кредита не было. Подруга посоветовала обратиться в офис Почта банка на ул. Тухачевского.</div>
-                    <div class="feedback-block__img"><img src="/img/reviews/rewiews-3.png " alt=""></div>
+                    <div class="feedback-block__img"><img src="./img/reviews/rewiews-3.png " alt=""></div>
                     <span class="feedback-block__name">Максим Глинников </br> Минск</span>
                 </div>
             </div>
@@ -509,7 +543,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <div class="map"></div>
+    <div class="map" id="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaa357bab059980d18ff4983765f49e78fd6639f286928b17c49acd5446c0c4dd&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script></div>
     <!-- /.section section-contacts -->
     <section class="section-questions">
         <div class="container">
@@ -551,5 +585,10 @@
         <!-- /.container -->
     </footer>
     <script type="text/javascript" src="js/burger.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
